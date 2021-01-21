@@ -5,11 +5,11 @@ Home: https://github.com/executablebooks/MyST-NB
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/myst-nb-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Jupyter Notebook Sphinx reader built on top of the MyST markdown parser.
 
-
+Documentation: https://myst-nb.readthedocs.io
 
 Current build status
 ====================
