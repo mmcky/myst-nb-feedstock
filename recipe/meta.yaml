@@ -1,5 +1,5 @@
 {% set name = "myst-nb" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d0b64c41a43594d3a06bc109fdfed27b442c542d9c6b9def257300133a532496
+  sha256: 1eacac39805487055f534b8351d93e806a9c85c0465538311a6494b256b423c3
 
 build:
   number: 0
@@ -20,12 +20,12 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15
-    - importlib_metadata
+    - importlib_metadata >=3.6
     - ipython
     - ipywidgets >=7.0.0,<8
     - jupyter-cache >=0.4.1,<0.5
-    - jupyter-sphinx ==0.3.1
-    - myst-parser ~=0.13.3
+    - jupyter-sphinx ~=0.3.2
+    - myst-parser ~=0.13.5
     - nbconvert >=5.5,<6
     - nbformat >=5.0,<6
     - python >=3.6
