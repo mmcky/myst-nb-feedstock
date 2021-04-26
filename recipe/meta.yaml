@@ -39,8 +39,9 @@ test:
   imports:
     - myst_nb
     - myst_nb.nb_glue
-  commands:
-    - pip check
+  # reuires jupyter-cache to pin sqlalchemy
+  # commands:
+  #  - pip check
 
 about:
   home: https://github.com/executablebooks/MyST-NB
