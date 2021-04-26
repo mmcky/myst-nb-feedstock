@@ -10,7 +10,7 @@ source:
   sha256: 1eacac39805487055f534b8351d93e806a9c85c0465538311a6494b256b423c3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15
-    - importlib_metadata >=3.6
+    - importlib-metadata >=3.6
     - ipython
     - ipywidgets >=7.0.0,<8
     - jupyter-cache >=0.4.1,<0.5
@@ -34,9 +34,13 @@ requirements:
     - sphinx-togglebutton >=0.2.2,<0.3
 
 test:
+  requires:
+    - pip
   imports:
     - myst_nb
     - myst_nb.nb_glue
+  commands:
+    - pip check
 
 about:
   home: https://github.com/executablebooks/MyST-NB
