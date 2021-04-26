@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15
-    - importlib-metadata >=3.6
+    - importlib-metadata
     - ipython
     - ipywidgets >=7.0.0,<8
     - jupyter-cache >=0.4.1,<0.5
